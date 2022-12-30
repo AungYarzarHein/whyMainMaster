@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning Frontend</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/yeti/bootstrap.min.css" integrity="sha384-mLBxp+1RMvmQmXOjBzRjqqr0dP9VHU2tb3FK6VB0fJN/AOu7/y+CAeYeWJZ4b3ii" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   <div class="container">
+       <h1 class="text-warning text-center mt-4">
+      <i class="fas fa-book-open text-primary"></i>  My Text Book
+       </h1>
+
+       <form class="col-10" id="form-list">
+           <div class="form-group">
+               <label for="bookName">
+                   <i class="fas fa-book text-info"></i>
+                Book Name
+               </label>
+               <input type="text" class="form-control" id="bookName" >
+           </div>
+
+           <div class="form-group">
+            <label for="bookId">
+                <i class="fab fa-ideal text-info"></i>
+             Book ID
+            </label>
+            <input type="text" class="form-control" id="bookId" >
+        </div>
+
+        <div class="form-group">
+            <label for="authorName">
+                <i class="fas fa-user-graduate text-info"></i>
+             Author Name
+            </label>
+            <input type="text" class="form-control" id="authorName" >
+        </div>
+
+        <input type="submit" class="btn btn-block btn-info col-12 mt-3" value="Add Book" />
+
+       </form>
+       
+   </div>
+
+   <div class="bookList mt-3">
+       <table class="table table-striped mx-1">
+           <thead class="bg-secondary text-info">
+               <tr>
+                   <th>Book Name</th>
+                   <th>ID Number</th>
+                   <th>Author Name</th>
+                   <th></th>
+               </tr>
+           </thead>
+           <tbody id="book-list">
+
+           </tbody>
+       </table>
+   </div>
+
+   <script src="jsFile/index.js"></script>
+</body>
+</html>
